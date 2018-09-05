@@ -1,1 +1,1 @@
-# terraformmeetup
+# terraform-meetup
