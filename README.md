@@ -57,7 +57,7 @@ Now you need to add the public key to your cloud instance
 Todo
 
 ## Add the configuration details for your cloud instance to Terraforms environment script ##
-In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and max (Todo)
+In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and Mac (Todo)
 The variables (OCID's etc) in this file needs to be updated to your instances details.
 
 ## Test the Terraform sample scripts that you downloaded earlier ##
