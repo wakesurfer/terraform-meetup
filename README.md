@@ -40,22 +40,22 @@ The credentials will be posted to some suitable place so you don't have to type 
 Create the public/private keys via your preferred tool or download a set of keys from here TODO
 
 ## Test the Terraform sample scripts that you downloaded earlier ##
-To test your Terraform installation run:
-'''
+To test your Terraform installation run
+```
 terraform init
-'''
+```
 
-To validate your Terraform script but not actually run it, directory
-'''
+To validate your Terraform script but not actually run it
+```
 terraform plan
-'''
+```
 
 And finally to run your Terraform script do
-'''
+```
 terraform apply
-'''
+```
 
 To clean up and remove the things you created with "terraform plan"
-'''
+```
 terraform destroy
-'''
+```
