@@ -13,5 +13,16 @@ To get going you need to do some setup tasks.
 
 1. Install Terraform on your machine
 2. Install some form of bash on your machine
-3. Create the public/private keys required to access the Oracle Cloud
-4. Run the Terraform lab scripts
+3. Copy the demo and environment files and setup your Terraform working directory
+4. Get the Credentials for an instance in the Oracle Cloud (provided at the meetup)
+5. Create the public/private keys required to access the Oracle Cloud
+6. Test the Terraform sample scripts
+
+## Copy the demo and environment files and setup your Terraform working directory ##
+
+## Install Terraform on your machine ##
+## Install some form of bash on your machine ##
+## Copy the demo and environment files and setup your Terraform working directory ##
+## Get the Credentials for an instance in the Oracle Cloud (provided at the meetup) ##
+## Create the public/private keys required to access the Oracle Cloud ##
+## Test the Terraform sample scripts ##
