@@ -25,11 +25,11 @@ Download and unpack the demo and environment files from here (terraform-meetup/s
 ## Install Terraform on your machine ##
 Download Terraform from https://www.terraform.io/downloads.html
 Terraform is distributed in binary form for all platforms. Extract the binary from the archive in a suitable directory on your machine.
+Next step is to install the Terraform provider plugin for the type of cloud provider you will use, in our case the Oracle Terraform provider.
 
 ## Install some form of bash on your machine ##
 We need to run some OpenSSL commands to create the keys used for authentication. OpenSSL can be installed in most Linux's via the package manager and used from the shell. The easiest way in Win 10 is probably to install the Ubuntu bash or similar from the Windows App Store.
 Another possibility is to install the Git-bash https://gitforwindows.org
-Yet another possibility is installing Cygwin in Windows.
 
 ## Copy the demo and environment files and setup your Terraform working directory ##
 Create a working directory for your lab and copy the demo and environment archive from GitHub either cloning the repository or downloading the file terraform-meetup/single_and_demo.tgz
@@ -56,11 +56,12 @@ openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pe
 Now you need to add the public key to your cloud instance
 Todo
 
-## Add the configuration details for your instance to Terraforms environment script ##
-
+## Add the configuration details for your cloud instance to Terraforms environment script ##
+In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and max (Todo)
+The variables (OCID's etc) in this file needs to be updated to your instances details.
 
 ## Test the Terraform sample scripts that you downloaded earlier ##
-To test your Terraform installation run
+Now you should be able to test your Terraform installation by running
 ```
 terraform init
 ```
