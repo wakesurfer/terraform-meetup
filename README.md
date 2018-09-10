@@ -22,8 +22,40 @@ To get going you need to do some setup tasks.
 Download and unpack the demo and environment files from here (terraform-meetup/single_and_demo.tgz)
 
 ## Install Terraform on your machine ##
+Download Terraform from https://www.terraform.io/downloads.html
+Terraform is distributed in binary form for all platforms. Extract the binary from the archive in a suitable directory on your machine.
+
 ## Install some form of bash on your machine ##
+We need to run some OpenSSL commands to create the certificates to use for authentication. OpenSSL can be installed in most Linux's via the package manager and used from the shell. The easiest way in Win 10 is probably to install the Ubuntu bash or similar from the Windows App Store.
+Another possibility is to install the Git-bash https://gitforwindows.org
+Yet another possibility is installing Cygwin in Windows.
+
 ## Copy the demo and environment files and setup your Terraform working directory ##
+Create a working directory for your lab and copy the demo and environment archive from GitHub either cloning the repository or downloading the file terraform-meetup/single_and_demo.tgz
+
 ## Get the Credentials for an instance in the Oracle Cloud (provided at the meetup) ##
+The credentials will be posted to some suitable place so you don't have to type them in manually
+
 ## Create the public/private keys required to access the Oracle Cloud ##
+Create the public/private keys via your preferred tool or download a set of keys from here TODO
+
 ## Test the Terraform sample scripts that you downloaded earlier ##
+To test your Terraform installation run:
+'''
+terraform init
+'''
+
+To validate your Terraform script but not actually run it, directory
+'''
+terraform plan
+'''
+
+And finally to run your Terraform script do
+'''
+terraform apply
+'''
+
+To clean up and remove the things you created with "terraform plan"
+'''
+terraform destroy
+'''
