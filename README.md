@@ -16,7 +16,8 @@ To get going you need to do some setup tasks.
 3. Copy the demo and environment files and setup your Terraform working directory
 4. Get the Credentials for an instance in the Oracle Cloud (provided at the meetup)
 5. Create the public/private keys required to access the Oracle Cloud
-6. Test the Terraform sample scripts
+6. Add the configuration details for your instance to Terraforms environment script
+7. Test the Terraform sample scripts
 
 ## Copy the demo and environment files and setup your Terraform working directory ##
 Download and unpack the demo and environment files from here (terraform-meetup/single_and_demo.tgz)
@@ -55,6 +56,7 @@ openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pe
 Now you need to add the public key to your cloud instance
 Todo
 
+## Add the configuration details for your instance to Terraforms environment script ##
 
 
 ## Test the Terraform sample scripts that you downloaded earlier ##
