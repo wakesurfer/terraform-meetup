@@ -96,6 +96,34 @@ Execute the script to set the environment or you could close the Powershell and 
 .\env-vars.ps1
 ```
 
+Finally you need to create a Terraform config file to instruct Terraform to perform some action.
+So create the file vcn.tf with a simple instruction to create a virtual network.
+```
+variable "tenancy_ocid" {}
+variable "user_ocid" {}
+variable "fingerprint" {}
+variable "private_key_path" {}
+variable "private_key_password" {}
+variable "compartment_ocid" {}
+variable "region" {}
+
+provider "oci" {
+  tenancy_ocid     = "${var.tenancy_ocid}"
+  user_ocid        = "${var.user_ocid}"
+  fingerprint      = "${var.fingerprint}"
+  private_key_path = "${var.private_key_path}"
+  private_key_password = "${var.private_key_password}"
+  region           = "${var.region}"
+}
+
+resource "oci_core_virtual_network" "vcn1" {
+  cidr_block     = "10.0.0.0/16"
+  dns_label      = "vcn1"
+  compartment_id = "${var.compartment_ocid}"
+  display_name   = "My Network"
+}
+```
+
 Now you should be able to test your Terraform installation by running
 ```
 terraform init
