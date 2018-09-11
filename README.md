@@ -20,7 +20,7 @@ To get going you need to do some setup tasks.
 7. Test the Terraform sample scripts
 
 ## Copy the demo and environment files and setup your Terraform working directory ##
-Download and unpack the demo and environment files from here (terraform-meetup/single_and_demo.tgz)
+Download and unpack the demo and environment files from here https://github.com/wakesurfer/terraform-meetup/blob/master/single_and_demo.tgz
 
 ## Install Terraform on your machine ##
 Download Terraform from https://www.terraform.io/downloads.html
