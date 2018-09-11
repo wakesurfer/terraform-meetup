@@ -21,8 +21,8 @@ To get going you need to do some setup tasks.
 
 ## 1. Install Terraform on your machine ##
 Download Terraform from https://www.terraform.io/downloads.html
-Terraform is distributed in binary form for all platforms. Extract the binary from the archive in a suitable directory on your machine.
-Next step is to install the Terraform provider plugin for the type of cloud provider you will use, in our case the Oracle Terraform provider.
+Terraform is distributed in binary form for all platforms. Extract the binary from the archive in a directory on your machine.
+Next step is to install the Terraform provider plugin for the type of cloud provider you will use, in our case the Oracle Terraform provider. You can download the provider from GitHub https://github.com/oracle/terraform-provider-oci
 
 ## 2. Install some form of bash on your machine ##
 We need to run some OpenSSL commands to create the keys used for authentication. OpenSSL can be installed in most Linux's via the package manager and used from the shell. The easiest way in Win 10 is probably to install the Ubuntu bash or similar from the Windows App Store.
@@ -50,8 +50,11 @@ To generate the public key
 openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pem
 ```
 
-Now you need to add the public key to your cloud instance
-Todo
+Now you need to add the public key to your cloud instance. The private key will be added to your Terraform setup scripts soon.
+Login to Oracle OCI Cloud.
+Go to Menu/Identity/Users and select your user.
+On your users information page klick "Add Public Key"
+Add the contents of the public key file you created earlier "~/.oci/oci_api_key_public.pem"
 
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
 In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and Mac (Todo)
