@@ -43,7 +43,8 @@ The credentials will be posted to some suitable place so you don't have to type 
 
 ## 5. Create the public/private keys required to access the Oracle Cloud ##
 Create the public/private keys via your preferred tool as per below.
-Or as an alternative download a set of pre-created keys from here
+
+*Or as an alternative download a set of pre-created keys from here*
 https://github.com/wakesurfer/terraform-meetup/blob/master/oci-keys.zip
 
 Additional instructions on managing keys can be found here https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How
@@ -70,7 +71,7 @@ If you need more help with the steps above [more details can be found here](http
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
 In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1".
 The following variables (OCID's etc) in this file needs to be updated to reflect your instance details.
-Note: If you copied the key files the password is "abba"
+*Note: If you copied the key files the password is "abba"*
 ```
 ### Substitute USERNAME to correct the path
 ### Substitute PASSWORD to the one you set on your private key
