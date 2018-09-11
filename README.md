@@ -17,7 +17,9 @@ To get going you need to do some setup tasks.
 4. Get the Credentials for an instance in the Oracle Cloud (provided at the meetup)
 5. Create the public/private keys required to access the Oracle Cloud
 6. Add the configuration details for your instance to Terraforms environment script
-7. Test the Terraform sample scripts
+7. Test a simple Terraform script to verify your installation
+
+## Installation and setup for Windows	##
 
 ## 1. Install Terraform on your machine ##
 Download Terraform from https://www.terraform.io/downloads.html.
@@ -91,12 +93,13 @@ $env:TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaaicsaq45yn5l6idotcgz
 $env:TF_VAR_region="us-ashburn-1"
 
 ```
-
-## 7. Test the Terraform sample scripts that you have downloaded earlier ##
 Execute the script to set the environment or you could close the Powershell and start a new instance.
 ```
 .\env-vars.ps1
 ```
+
+
+## 7. Test a simple Terraform script to verify your installation ##
 
 Finally you need to create a Terraform config file to instruct Terraform to perform some action.
 So create the file vcn.tf in your working directory with a simple instruction to create a virtual network.
@@ -145,3 +148,5 @@ To clean up and remove the things you created with "terraform apply"
 ```
 terraform destroy
 ```
+
+If the above works you can continue and explore the other scripts in the samples you have downloaded.
