@@ -90,14 +90,14 @@ $env:TF_VAR_region="us-ashburn-1"
 
 ```
 
-## 7. Test the Terraform sample scripts that you downloaded earlier ##
+## 7. Test the Terraform sample scripts that you have downloaded earlier ##
 Execute the script to set the environment or you could close the Powershell and start a new instance.
 ```
 .\env-vars.ps1
 ```
 
 Finally you need to create a Terraform config file to instruct Terraform to perform some action.
-So create the file vcn.tf with a simple instruction to create a virtual network.
+So create the file vcn.tf in your working directory with a simple instruction to create a virtual network.
 ```
 variable "tenancy_ocid" {}
 variable "user_ocid" {}
