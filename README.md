@@ -31,13 +31,15 @@ C:\Users\USERNAME\AppData\Roaming\terraform.d\plugins\terraform-provider-oci_v2.
 
 ## 2. Install some form of bash on your machine ##
 We need to run some OpenSSL commands to create the keys used for authentication. OpenSSL can be installed in most Linux's via the package manager and used from the shell. The easiest way in Win 10 is probably to install the Ubuntu bash or similar from the Windows App Store.
-Another possibility is to install the Git-bash https://gitforwindows.org
+Another possibility is to install the Git-bash https://gitforwindows.org.
+
+If you choose to download the pre-created keys then you can skip this step.
 
 ## 3. Copy the demo and environment files and setup your Terraform working directory ##
 Create a working directory for your lab and copy the demo and environment archive from GitHub either cloning the repository or downloading the archive https://github.com/wakesurfer/terraform-meetup/blob/master/single_and_demo.tgz
 
 ## 4. Get the Credentials for an instance in the Oracle Cloud (provided at the meetup) ##
-The credentials will be posted to some suitable place so you don't have to type them in manually
+The credentials will be posted to some suitable place so you don't have to type them in manually.
 
 ## 5. Create the public/private keys required to access the Oracle Cloud ##
 Create the public/private keys via your preferred tool as per below.
@@ -68,7 +70,7 @@ If you need more help with the steps above [more details can be found here](http
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
 In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1".
 The following variables (OCID's etc) in this file needs to be updated to reflect your instance details.
-Note: If you copied the key files the password is "abba"!
+Note: If you copied the key files the password is "abba"
 ```
 ### Substitute USERNAME to correct the path
 ### Substitute PASSWORD to the one you set on your private key
