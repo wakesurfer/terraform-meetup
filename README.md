@@ -139,7 +139,7 @@ And finally to run your Terraform script do
 terraform apply
 ```
 
-To clean up and remove the things you created with "terraform plan"
+To clean up and remove the things you created with "terraform apply"
 ```
 terraform destroy
 ```
