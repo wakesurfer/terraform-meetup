@@ -74,7 +74,7 @@ If you need more help with the steps above [more details can be found here](http
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
 In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1".
 The following variables (OCID's etc) in this file needs to be updated to reflect your instance details.
-*Note: If you copied the key files the password is "abba"*
+**Note: If you copied the key files the password is "abba"**
 ```
 ### Substitute USERNAME to correct the path
 ### Substitute PASSWORD to the one you set on your private key
