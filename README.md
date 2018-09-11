@@ -33,7 +33,7 @@ C:\Users\USERNAME\AppData\Roaming\terraform.d\plugins\terraform-provider-oci_v2.
 We need to run some OpenSSL commands to create the keys used for authentication. OpenSSL can be installed in most Linux's via the package manager and used from the shell. The easiest way in Win 10 is probably to install the Ubuntu bash or similar from the Windows App Store.
 Another possibility is to install the Git-bash https://gitforwindows.org.
 
-If you choose to download the pre-created keys then you can skip this step.
+*If you choose to download the pre-created keys then you can skip this step.*
 
 ## 3. Copy the demo and environment files and setup your Terraform working directory ##
 Create a working directory for your lab and copy the demo and environment archive from GitHub either cloning the repository or downloading the archive https://github.com/wakesurfer/terraform-meetup/blob/master/single_and_demo.tgz
