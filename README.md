@@ -64,7 +64,7 @@ To generate the public key
 openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pem
 ```
 
-Now you need to add the public key to your cloud instance. The private key will be added to your Terraform setup scripts in the next few steps.
+Now you need to add the public key to your cloud instance. The private key will be added to your Terraform setup script in the next few steps.
 
 Login to Oracle OCI Cloud.
 Go to Menu/Identity/Users and select your user.
@@ -95,7 +95,7 @@ $env:TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaaicsaq45yn5l6idotcgz
 $env:TF_VAR_region="us-ashburn-1"
 
 ```
-Execute the script to set the environment or you could close the Powershell and start a new instance.
+Execute the script to set the environment.
 ```
 .\env-vars.ps1
 ```
