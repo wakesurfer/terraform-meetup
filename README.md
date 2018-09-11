@@ -49,6 +49,9 @@ Create the public/private keys via your preferred tool as per below.
 
 **Or as an alternative download a set of pre-created keys from [here](https://github.com/wakesurfer/terraform-meetup/blob/master/oci-keys.zip)**
 
+The location of the keys should be under the subdirectory ".oci" in your home directory, something like: C:\Users\USERNAME\.oci
+Replace USERNAME with your Windows username. If you downloaded the pre-created keys they should also be in this directory.
+
 Additional instructions on managing keys can be found [here](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How).
 
 To create the private key with a password.
@@ -61,12 +64,12 @@ To generate the public key
 openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pem
 ```
 
-Now you need to add the public key to your cloud instance. The private key will be added to your Terraform setup scripts soon.
+Now you need to add the public key to your cloud instance. The private key will be added to your Terraform setup scripts in the next few steps.
 
 Login to Oracle OCI Cloud.
 Go to Menu/Identity/Users and select your user.
 On your users information page click "Add Public Key"
-Add the contents of the public key file you created earlier "~/.oci/oci_api_key_public.pem".
+Add the contents of the public key file you just created "~/.oci/oci_api_key_public.pem".
 
 If you need more help with the steps above [more details can be found here](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How2).
 
