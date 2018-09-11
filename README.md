@@ -51,9 +51,10 @@ openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pe
 ```
 
 Now you need to add the public key to your cloud instance. The private key will be added to your Terraform setup scripts soon.
+[More details can be found here](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How2)
 Login to Oracle OCI Cloud.
 Go to Menu/Identity/Users and select your user.
-On your users information page klick "Add Public Key"
+On your users information page click "Add Public Key"
 Add the contents of the public key file you created earlier "~/.oci/oci_api_key_public.pem"
 
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
