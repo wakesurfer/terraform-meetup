@@ -65,6 +65,11 @@ In the Terraform samples archive there is an environment file for Windows Powers
 The variables (OCID's etc) in this file needs to be updated (Todo) to your instances details.
 
 ## 7. Test the Terraform sample scripts that you downloaded earlier ##
+Execute the script to set the environment.
+```
+.\env-vars.ps1
+```
+
 Now you should be able to test your Terraform installation by running
 ```
 terraform init
