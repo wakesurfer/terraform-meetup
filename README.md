@@ -150,3 +150,4 @@ terraform destroy
 ```
 
 If the above works you can continue and explore the other scripts in the samples you have downloaded.
+ 
