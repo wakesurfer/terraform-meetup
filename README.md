@@ -23,7 +23,7 @@ To get going you need to do some setup tasks.
 Download Terraform from https://www.terraform.io/downloads.html
 Terraform is distributed in binary form for all platforms. Extract the binary from the archive in a directory on your machine.
 Next step is to install the Terraform provider plugin for the type of cloud provider you will use, in our case the Oracle Terraform provider. You can download the provider from GitHub https://github.com/oracle/terraform-provider-oci
-Unpack the provider archive and copy the executable to
+Unpack the provider archive and copy the executable to (replace USERNAME with your username)
 ```
 C:\Users\USERNAME\AppData\Roaming\terraform.d\plugins\terraform-provider-oci_v2.2.2.exe
 ```
