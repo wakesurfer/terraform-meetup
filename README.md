@@ -55,7 +55,7 @@ Todo
 
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
 In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and Mac (Todo)
-The variables (OCID's etc) in this file needs to be updated to your instances details.
+The variables (OCID's etc) in this file needs to be updated (Todo) to your instances details.
 
 ## 7. Test the Terraform sample scripts that you downloaded earlier ##
 Now you should be able to test your Terraform installation by running
