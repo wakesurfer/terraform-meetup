@@ -61,8 +61,25 @@ Add the contents of the public key file you created earlier "~/.oci/oci_api_key_
 If you need more help with the steps above [more details can be found here](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How2).
 
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
-In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and Mac (Todo)
-The variables (OCID's etc) in this file needs to be updated (Todo) to your instances details.
+In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and Mac but that is another how-to.
+The following variables (OCID's etc) in this file needs to be updated (Todo) to reflect your instances details.
+```
+### Substitute USERNAME to correct the path
+### Substitute the OCIDs, fingerprints and keys with the correct ones for your environment
+### Authentication details
+$env:TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaazabhxa2ah2t3kwqx6azvo2tl7myjxzq2jdxjf2tabn6mndnrh5lq"
+$env:TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaaehgxm7ccb4locxlxfdfsb4ukslipabcgvoy2gmbencb53axtd3hq"
+$env:TF_VAR_fingerprint="04:5d:ce:54:64:4b:28:83:c4:e5:2d:f8:46:86:3f:49"
+$env:TF_VAR_private_key_path="C:\Users\PEKARLSS\.oci\oci_api_key.pem"
+$env:TF_VAR_private_key_password="abba"
+
+### Compartment
+$env:TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaaicsaq75yn5l6idotcgzhpiwy6ljv4p6koswheo4h5wmguly3tbia"
+
+### Region
+$env:TF_VAR_region="us-ashburn-1"
+
+```
 
 ## 7. Test the Terraform sample scripts that you downloaded earlier ##
 Execute the script to set the environment.
