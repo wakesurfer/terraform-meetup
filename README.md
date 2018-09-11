@@ -48,7 +48,7 @@ https://github.com/wakesurfer/terraform-meetup/blob/master/oci-keys.zip
 
 Additional instructions on managing keys can be found here https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How
 
-To create the private key
+To create the private key with a password.
 ```
 openssl genrsa -out ~/.oci/oci_api_key.pem -aes128 2048
 ```
