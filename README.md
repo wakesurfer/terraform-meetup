@@ -38,7 +38,7 @@ The credentials will be posted to some suitable place so you don't have to type 
 Create the public/private keys via your preferred tool as per below or download a set of keys from here
 https://github.com/wakesurfer/terraform-meetup/blob/master/oci-keys.zip
 
-More instructions on managing keys can be found here https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How
+Additional instructions on managing keys can be found here https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How
 
 To create the private key
 ```
