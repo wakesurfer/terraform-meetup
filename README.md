@@ -47,7 +47,7 @@ The credentials will be posted to some suitable place so you don't have to type 
 ## 5. Create the public/private keys required to access the Oracle Cloud ##
 Create the public/private keys via your preferred tool as per below.
 
-**Or as an alternative download a set of pre-created keys from [here]**(https://github.com/wakesurfer/terraform-meetup/blob/master/oci-keys.zip)
+**Or as an alternative download a set of pre-created keys from [here](https://github.com/wakesurfer/terraform-meetup/blob/master/oci-keys.zip)**
 
 Additional instructions on managing keys can be found here https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How
 
