@@ -23,6 +23,10 @@ To get going you need to do some setup tasks.
 Download Terraform from https://www.terraform.io/downloads.html
 Terraform is distributed in binary form for all platforms. Extract the binary from the archive in a directory on your machine.
 Next step is to install the Terraform provider plugin for the type of cloud provider you will use, in our case the Oracle Terraform provider. You can download the provider from GitHub https://github.com/oracle/terraform-provider-oci
+Unpack the provider archive and copy the executable to
+```
+C:\Users\USERNAME\AppData\Roaming\terraform.d\plugins\terraform-provider-oci_v2.2.2.exe
+```
 
 ## 2. Install some form of bash on your machine ##
 We need to run some OpenSSL commands to create the keys used for authentication. OpenSSL can be installed in most Linux's via the package manager and used from the shell. The easiest way in Win 10 is probably to install the Ubuntu bash or similar from the Windows App Store.
@@ -61,20 +65,21 @@ Add the contents of the public key file you created earlier "~/.oci/oci_api_key_
 If you need more help with the steps above [more details can be found here](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#How2).
 
 ## 6. Add the configuration details for your cloud instance to Terraforms environment script ##
-In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1" and for linux and Mac but that is another how-to.
-The following variables (OCID's etc) in this file needs to be updated (Todo) to reflect your instances details.
+In the Terraform samples archive there is an environment file for Windows Powershell "env-vars.ps1".
+The following variables (OCID's etc) in this file needs to be updated to reflect your instance details.
 ```
 ### Substitute USERNAME to correct the path
+### Substitute PASSWORD to the one you set on your private key
 ### Substitute the OCIDs, fingerprints and keys with the correct ones for your environment
 ### Authentication details
-$env:TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaazabhxa2ah2t3kwqx6azvo2tl7myjxzq2jdxjf2tabn6mndnrh5lq"
-$env:TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaaehgxm7ccb4locxlxfdfsb4ukslipabcgvoy2gmbencb53axtd3hq"
-$env:TF_VAR_fingerprint="04:5d:ce:54:64:4b:28:83:c4:e5:2d:f8:46:86:3f:49"
-$env:TF_VAR_private_key_path="C:\Users\PEKARLSS\.oci\oci_api_key.pem"
-$env:TF_VAR_private_key_password="abba"
+$env:TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaazabhxa2ah2t3kwOx6azvo2tl7myjxzq2jdxjf2tabn6mndnrh5lq"
+$env:TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaaehgxm9ccb4locxlxfdfsb4ukslipabcgvoy2gmbencb53axtd3hq"
+$env:TF_VAR_fingerprint="04:5d:ce:54:64:4b:28:23:c4:e5:2d:f8:46:86:3f:49"
+$env:TF_VAR_private_key_path="C:\Users\USERNAME\.oci\oci_api_key.pem"
+$env:TF_VAR_private_key_password="PASSWORD"
 
 ### Compartment
-$env:TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaaicsaq75yn5l6idotcgzhpiwy6ljv4p6koswheo4h5wmguly3tbia"
+$env:TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaaicsaq45yn5l6idotcgzhpiwy6ljv4p6koswheo4h5wmguly3tbia"
 
 ### Region
 $env:TF_VAR_region="us-ashburn-1"
@@ -82,7 +87,7 @@ $env:TF_VAR_region="us-ashburn-1"
 ```
 
 ## 7. Test the Terraform sample scripts that you downloaded earlier ##
-Execute the script to set the environment.
+Execute the script to set the environment or you could close the Powershell and start a new instance.
 ```
 .\env-vars.ps1
 ```
