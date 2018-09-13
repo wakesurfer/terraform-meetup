@@ -105,7 +105,7 @@ Execute the script to set the environment.
 
 Finally you need to create a Terraform config file to instruct Terraform to perform some action.
 So create the file vcn.tf in your working directory with a simple instruction to create a virtual network.
-# Please note, do not have any other .tf files in the same directory #
+### Please note, do not have any other .tf files in the same directory ###
 ```
 variable "tenancy_ocid" {}
 variable "user_ocid" {}
